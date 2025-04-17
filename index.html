@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICAD Narwana - Water Course Status Query</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #1e4e79;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        .logo {
+            max-height: 80px;
+        }
+        .search-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .result-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            display: none;
+        }
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .result-table th {
+            background-color: #1e4e79;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        .result-table th, .result-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        .result-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .result-table tr:hover {
+            background-color: #ddd;
+        }
+        .footer {
+            background-color: #1e4e79;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .nav-tabs .nav-link {
+            color: #495057;
+        }
+        .nav-tabs .nav-link.active {
+            color: #1e4e79;
+            font-weight: bold;
+        }
+        .tab-content {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .loading-spinner {
+            width: 3rem;
+            height: 3rem;
+        }
+        @media (max-width: 768px) {
+            .search-container, .result-container {
+                padding: 15px;
+            }
+            .result-table th, .result-table td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1>MICAD Narwana</h1>
+                    <p class="lead">Water Course Status Query System</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <!-- You can add a logo here -->
+                    <!-- <img src="logo.png" alt="MICAD Logo" class="logo"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="search-container">
+            <h2 class="mb-4">Search Water Course Information</h2>
+            <form id="searchForm">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="searchType" class="form-label">Search By</label>
+                        <select class="form-select" id="searchType">
+                            <option value="rd">RD of Watercourse</option>
+                            <option value="village">Village Name</option>
+                            <option value="channel">Channel Name</option>
+                            <option value="constituency">Constituency</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="searchQuery" class="form-label">Search Term</label>
+                        <input type="text" class="form-control" id="searchQuery" placeholder="Enter search term...">
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="reset" class="btn btn-secondary">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="loading">
+            <div class="spinner-border loading-spinner text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p>Searching records...</p>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <h3>Search Results</h3>
+            <ul class="nav nav-tabs" id="resultTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All Results</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="status-tab" data-bs-toggle="tab" data-bs-target="#status" type="button" role="tab" aria-controls="status" aria-selected="false">Status of Works</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="remodelling-tab" data-bs-toggle="tab" data-bs-target="#remodelling" type="button" role="tab" aria-controls="remodelling" aria-selected="false">Remodelling List</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="extension-tab" data-bs-toggle="tab" data-bs-target="#extension" type="button" role="tab" aria-controls="extension" aria-selected="false">Extension List</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="application-tab" data-bs-toggle="tab" data-bs-target="#application" type="button" role="tab" aria-controls="application" aria-selected="false">New Applications</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="resultTabsContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div id="allResults"></div>
+                </div>
+                <div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="status-tab">
+                    <div id="statusResults"></div>
+                </div>
+                <div class="tab-pane fade" id="remodelling" role="tabpanel" aria-labelledby="remodelling-tab">
+                    <div id="remodellingResults"></div>
+                </div>
+                <div class="tab-pane fade" id="extension" role="tabpanel" aria-labelledby="extension-tab">
+                    <div id="extensionResults"></div>
+                </div>
+                <div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
+                    <div id="applicationResults"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 MICAD Narwana. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
