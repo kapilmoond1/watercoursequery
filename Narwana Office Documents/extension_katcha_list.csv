@@ -1,0 +1,66 @@
+Sr. No.,RD of watercourse,Name of channel,Discharge,Total Area Covered (in Acre.),Length to be lined (In Rft.),Estimated cost (Rs. in Lakh),Name of constituen cy,Name of Village,Type of Watercourse
+1,39000-R,Narwana Minor,0.99,413,16520,11610,78.65,Narwana,"Frainkalan, Khurd",Extension
+2,11000-TF,Mohalgarh Feeder,1.68,700,28000,3499,28.68,Narwana,"Narwana, Ismailpur",Extension
+3,2600-R,Mohalgarh Feeder,0.83,344,13760,8832,57.75,Narwana,Mohalkhera,Extension
+5,69500-TF,Dharodi Minor,0.66,276,11040,754,6.02,Narwana,"Frainkalan, khurd",Extension
+6,27250-R,Narwana Minor,1.15,480,19200,886,7.48,Narwana,Dablain,Extension
+7,3470-R,Mohalgarh Feeder,2.14,892,35680,12216,94.90,Narwana,"Mohalkhera, Narwana",Extension
+8,3180-L,Barwala Branch,1.06,737,29480,10602,72.00,Narwana,"Badanpur, Jheel",Extension
+10,21000-L,Lown Minor,0.74,309,12360,4900,32.50,Narwana,"Hamirgarh, Lown",Extension
+11,5000-L,2-L Sainthli Minor,1.01,423,16920,6700,45.92,Uchana,Mangalpur,Extension
+12,17500-TF,Sandlana Minor,1.43,598.86,23954,2828,23.00,Uchana,"Makhand, Kakrod",Extension
+13,811-L,Dhakal Minor,0.92,262,10480,1938,14.02,Narwana,Dhakal,Extension
+14,9000-TL,Ismailpur Minor,1.59,663,26520,11791,94.62,Narwana,Ismailpur,Extension
+15,101090-L,Dhamtan Disty.,0.91,378,15120,4824,33.30,Narwana,Kharal,Extension
+16,35356-L,Dharodi Minor,1.78,743,29720,7115,53.90,Narwana,"Dharodi, Narwana",Extension
+17,369750-R,Sirsa Branch,1.38,574,22960,2580,19.23,Narwana,"Danodakalan, Khurd",Extension
+18,21190-R,New Sinsar Minor,0.67,278,11120,7954,48.33,Narwana,"Sinsar, Bidhrana",Extension
+19,11359-L,Mohalgarh Minor,1.25,522,20880,6276,44.53,Narwana,"Kolekhan, Dhundwa",Extension
+20,6912-L,Belarkha Minor,0.97,405,16200,4645,32.19,Narwana,Dhundwa,Extension
+21,40148-L,Dharodi Minor,1.68,702,28080,2836,22.28,Narwana,Dharodi,Extension
+22,5500-L,Mohalgarh Feeder,1.06,441,17640,10810,73.27,Narwana,Narwana,Extension
+23,9000-TR,Ismailpur Minor,1.61,672,26880,2047,17.42,Narwana,"Ismailpur, Dharodi",Extension
+24,100615-R,Shudkain Disty,1.72,718,28720,7924,60.01,Narwana,Matour,Extension
+25,44225-R,Dharodi Minor,1.27,528,21120,617,5.60,Narwana,"Dharodi, Lown",Extension
+26,54500-TL,Surbra Disty,0.96,401.1,16044,2630,19.59,Uchana,"Surbra, Kharkara",Extension
+27,8810-L,Kharal Minor,1.65,513,20520,1013,8.43,Narwana,Ujhana,Extension
+28,10750-L,Nsk Link Channel,1.08,449.71,17988,2204,15.70,Narwana,"Danodakhurd, Bithmar",Extension
+29,17518-R,Mohalgarh Minor,0.4,166,6640,1642,10.51,Narwana,Gurusar,Extension
+30,24650-L,Lown Minor,1.05,438,17520,2175,15.53,Narwana,"Harnampura, Karamgarh",Extension
+31,26000-R,Nsk Minor,1.09,455.84,18234,6690,45.86,Narwana,Danodakalan,Extension
+32,4650-L,Lown Minor,2.13,889,35560,11011,85.77,Narwana,"Kharal, Dhamtan",Extension
+33,336400-L,Sirsa Branch,0.86,598,23920,6920,45.47,Uchana,Jheel,Extension
+34,130000-L,Dhamtan Disty.,1.09,456,18240,5004,34.47,Narwana,Dhamtan,Extension
+35,26650-L,Barsola Feeder,0.7,290,11600,2268,14.37,Uchana,Kherimasaniya,Extension
+36,12500-L,Ghasso Feeder,0.94,390,15600,5136,35.23,Uchana,Bhagwanpura,Extension
+37,17270-L,2L- Sainthali Minor,1.28,531.28,21251,9419,66.27,Uchana,"Surbra, Nacharkhera",Extension
+38,375932-L,Sirsa Branch,1.2,499.76,19990,3448,25.51,Narwana,"Danodakalan,Sainthli",Extension
+39,9750-R,Lown Minor,1.12,469,18760,8716,59.34,Narwana,Lown,Extension
+40,9600-R,Mohalgarh Feeder,1.05,441,17640,4181,28.90,Narwana,Narwana,Extension
+41,14700/L,3-L Barsola Minor,1.4,583,23320,9878,74.15,Uchana,"Khatkar, Kasoon",Extension
+42,23700/L,Surbra Disty,1.29,537.03,21481,1100,8.72,Uchana,Durjanpur,Extension
+C1,3884-L,Surbra Link Channel,0.3,126.34,5054,29.71,Narwana,Danoda Kalan,Katcha
+C2,5800-L,Surbra Link Channel,0.35,145,5800,39.82,Narwana,Danoda Kalan,Katcha
+C3,5800-R,Surbra Link Channel,0.7,293.58,11743,70.94,Narwana,Danoda Kalan,Katcha
+C4,2900-R,Surbra Disty.,0.31,130.25,5210,30.53,Uchana,Surbra,Katcha
+C5,200-R,Dohana Khera Minor,0.61,261.13,10445,62.91,Uchana,DohanaKhera,Katcha
+C6,2225-TR,Dohana Khera Minor,0.62,260.55,10422,62.79,Uchana,"DohanaKhera, Mangalpur",Katcha
+C7,2225-TL,Dohana Khera Minor,0.15,64,2560,15.75,Uchana,"DohanaKhera, Mangalpur",Katcha
+C8,1165-R,Dohana Khera Minor,1.13,471.45,18858,126.88,Uchana,"DohanaKhera, Mangalpur",Katcha
+C9,8700-L,4-L Barsola Minor,0.48,199,7960,46.31,Uchana,"Barsola, Khatkar",Katcha
+C10,41700-R,Barsola Minor,0.83,344,13760,89.39,Uchana,Karsindhu,Katcha
+C11,55500-R,Barsola Feeder,0.5,208,8320,48.19,Uchana,"Baroda, Khaper",Katcha
+C12,63600-L,Barsola Feeder,0.2,84,3360,19.94,Uchana,Baroda,Katcha
+C13,"80500/11000-TF",Direct Barsola Feeder,0.72,300,12000,77.98,Uchana,Khatkar,Katcha
+C14,"28900/28600-L",1-L Barsola Minor,0.24,100,4000,23.75,Uchana,Ghogarian,Katcha
+C15,20480-R,Pipaltha Minor,0.8,333,13320,86.3,Narwana,"Nepewala, Datasinghwal",Katcha
+C16,21700-R,Dhanaury Disty,0.36,152,6080,35.53,Narwana,Sinand,Katcha
+C17,4500-L,1-L Barsola Minor,1.48,617,24680,183.55,Uchana,"Chhater, Karsindhu",Katcha
+C18,3500-R,Kheri Sherkhan Minor,0.36,316.52,12661,73.19,Uchana,"Mandikalan, Chhater",Katcha
+C19,9260-R,chatter minor,0.46,193,7720,45.04,Uchana,Chatter,Katcha
+C20,29688-R,chhater minor,0.56,235,9400,56.69,Uchana,Mandikalan,Katcha
+C21,7600-L,Dharodi Minor,0.46,195,7800,45.47,Narwana,"Ujhana, Ambersar",Katcha
+C22,14200-TL,Kheri Sherkhan Minor,1.2,742,29680,212.91,Uchana,"Chhater, Lodher, Kheriserkhan",Katcha
+C23,21240-R,New Sinsar Minor,0.27,113,4520,26.93,Narwana,Bidhrana,Katcha
+C25,377000-R,Sirsa Branch,0.35,145,5800,34.09,Narwana,"Danoda kalan",Katcha
+C26,8300-R,Gaushala Minor,0.48,200,8000,46.51,Uchana,"DaroliKhera, Uchana Khurd",Katcha
